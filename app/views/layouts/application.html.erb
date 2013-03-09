@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+<title>e-shop</title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+<body>
+	<div id="banner">
+	</div>
+	
+	<div id="container">
+	  <div id="masthead">
+
+	  <% if user_signed_in? %> 
+	  	  <% if current_user.admin? %>	
+	  		<h1>ADMIN page</h1>
+	  		<%end%>
+
+	   		<%= link_to 'Home', store_path %>
+	   		<% if current_user.admin? %>			
+				<%= link_to 'Users', users_path %>
+			<% end %>
+
+			<%= link_to 'Contact', contact_path %>
+			<%= link_to 'About', about_path %>
+			<%= link_to 'Help', help_path %>
+			
+			<div id="mast-right">
+			  <%= button_to('Logout', destroy_user_session_path, :method => :delete) %>
+			  <p>Welcome <%= link_to current_user.email, edit_user_registration_path %></p></div> 
+			
+		 	
+		<% else %>
+			<%= link_to 'Home', root_path %>	
+			<%= link_to 'Contact', contact_path %>
+			<%= link_to 'About', about_path %>
+			<%= link_to 'Help', help_path %>
+			<%= button_to('Login', new_user_session_path, :method => :get)  %>
+			<p>Not registered? Please <%= link_to('Register', new_user_registration_path)  %></p>
+		<% end %>
+		
+	  </div>
+
+	<% if notice || alert %> 
+	  <div id="flash">
+		<p class="notice"><%= notice %></p>
+		<p class="alert"><%= alert %></p> 
+	  </div>
+	<% else %>
+	<% end %>	
+   <div id="content">
+		<%= yield %>
+   </div>
+
+</div>
+</body>
+</html>
