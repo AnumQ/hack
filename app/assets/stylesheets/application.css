@@ -1,323 +1,100 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	font-family: helvetica;
+	color: #505050;
+	font-size: 13px;
+	background-color: #e0f0ff;
+	
+}
+a{
+	text-decoration:none;
+	}
 
-body
+#content-holder
 {
-
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-
-	font-size: 0.8em;
-
-
+	
+	height:720px;
 }
 
+#wrapper{
 
-#container
-{
+    background-image: url('indexbg.jpg');
+	width:1024px;
+	height:720px;
+	margin-top: -10px;
+	margin-bottom: 0px;
+	margin-right:auto;
+	margin-left: auto;	
+	}
 
-	width: 840px;
+#wrapper p{
+	color:white;
+	font-size: 13pt;
+	
+	}
+#wrapper p:hover{
+	text-decoration:none;
+	color:#FF6633;
+	
+	}
 
-	margin: 10px auto;
-
-}
-
-#store
-{
-}
-
-#banner
-{
+.logo{
+	margin-left:31%;
+	margin-top:60px;
+	}
+.learn-btn{
+	margin-left:20%;
+	float:left;
+	text-align:center;
+	}
+.events-btn{
+	margin-right:15%;
+	float:right;
+	text-align:center;
+	}
+.signup-btn{
+	margin-top:70px;
+	margin-left:40px;
+	padding-left:10px;
+	text-align:center;
+	}
+#footer{
+	width: 1024px;
 	margin-right: auto;
 	margin-left: auto;
-	width: 800px;
-}
-#title
+	margin-top: 0px;
+	background-color:#1C314F;
+	height:32px;
+	}
+#footer .about
 {
-}
-
-#masthead
-{
-
-	text-align: center;
-
-	width: 830px;
-
-	border-top: 5px solid ForestGreen;
-
-	border-right: 5px solid ForestGreen;
-
-	border-bottom: 5px solid ForestGreen;
-
-	border-left: 5px solid ForestGreen;
-
-
-}
-
-#mast-right
-{	
-	margin-right: 0px;
-	margin-left: auto;
-	text-align: right;
-	width: 200px;
-}
-
-
-#sidebar
-{
-	text-align: left;
-
-	float: right;
-
-	width: 140px;
-
-    height: 500px;
-
-	margin-top: 10px;
-
-	margin-bottom: 10px;
-
-
-
-	border-top: 5px solid ForestGreen;
-
-	border-right: 5px solid ForestGreen;
-
-	border-bottom: 5px solid ForestGreen;
-
-	border-left: 5px solid ForestGreen;
-}
-
-
-#sidebar p
-{
-
-	color: Black;
-	text-decoration: none;
-
-	padding: 5px;
-
-}
-
-#sidebar a:hover
-{
-
-	color: White;
-
-	text-decoration: none;
-
-	border: 1px solid Black;
-
-	background-color: Black;
-
-}
-
-#cart, #cart table{
-	color: black;
-}
-
-#cart table{
-	border-top: 1px dotted #595;
-	border-bottom: 1px dotted #595;
-    margin-bottom: 10px;
-}
-
-#navigation
-{
-	text-align: left;
-
-	float: left;
-
-	width: 140px;
-
-        height: 500px;
-
-	margin-top: 10px;
-
-	margin-bottom: 10px;
-
-
-
-	border-top: 5px solid ForestGreen;
-
-	border-right: 5px solid ForestGreen;
-
-	border-bottom: 5px solid ForestGreen;
-
-	border-left: 5px solid ForestGreen;
-
-	background-color: white;
-
-}
-
-
-#content
-{
-
-	float: left;
-
-	width: 500px;
-
-    	height: 500px auto;
-
-	margin-top: 10px;
-
-	margin-bottom: 10px;
-
 	margin-left: 10px;
+	font-size: 14px;
+}
+
+#footer .about a{
+	margin-top: 8px;
+	color:white;
+	float:left;
+	}
+#footer .about a:hover{
+	color:#FF6633;
+	}
+#footer .credit{
+	color:white;
+	float:right;
+	width:200px;
+	}
+#footer .credit p{
+	margin-top:7px;
+	font-size: 14px;
+	float: right;
 	margin-right: 10px;
-
-    	padding-left: 10px;
-
-    	padding-bottom: 10px;
-
-
-}
-
-
-#footer
-{
-
-	text-align: center;
-
-	clear: both;
-
-	width: 830px;
-
-	padding-top: 5px;
-
-	padding-bottom: 5px;
-
-	border-top: 5px solid ForestGreen;
-
-	border-right: 5px solid ForestGreen;
-
-	border-bottom: 5px solid ForestGreen;
-
-	border-left: 5px solid ForestGreen;
-
-
-}
-
-
-#masthead h1
-{
-
-	color: DarkOliveGreen;
-
-}
-
-#masthead h3
-{
-
-	color: DarkCyan;
-
-}
-
-
-
-
-
-#navigation a
-{
-
-	color: Black;
-	text-decoration: none;
-
-	padding: 5px;
-
-}
-
-#navigation a:hover
-{
-
-	color: White;
-
-	text-decoration: none;
-
-	border: 1px solid Black;
-
-	background-color: Black;
-
-}
-
-
-
-#content h1,h2,h3,h4,h5,h6
-{
-
-	color: Black;
-
-}
-
-
-#content img
-{
-
-	padding: 5px;
-
-	border: 1px solid Black;
-
-}
-
-
-
-#footer p
-{
-
-	color: Black;
-
-	margin-top: 5px;
-
-}
-
-
-#footer a
-{
-
-	color: Black;
-
-	text-decoration: underline;
-
-}
-
-#footer a:hover
-{
-
-	color: White;
-	text-decoration: none;
-	background-color: Black;
-
-}
-
-#flash 
-{
-	width: 830px;
-	border-top: 5px solid ForestGreen;
-
-	border-right: 5px solid ForestGreen;
-
-	border-bottom: 5px solid ForestGreen;
-
-	border-left: 5px solid ForestGreen;
 	
-	margin-top: 10px;
-}
-
-.notice
-{
-	padding-left: 50px;
-}
-
-.notice p
-{
-	
-	background-color: red;
-}
-
-.alert
-{
-	padding-left: 50px;
-}
-.alert p
-{
-	
-	background-color: blue;
-}
+	}
+#footer .facebook{
+	float:right;
+	margin-left: 5px;
+	margin-top:-22px;
+	}

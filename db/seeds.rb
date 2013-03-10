@@ -9,41 +9,58 @@
 
 User.delete_all
 
-User.create(:fullname => "admin", 
-			:address1 => "N/A", 
-			:address2 => "N/A",
-			:postcode => "N/A", 
-			:city => "N/A", 
-			:country => "N/A", 
-			:phone => 123456789,
+User.create(:username => "admin",
+			:email => "admin@admin.com",
+			:password => "google", 
+			:password_confirmation => "google",
+			:admin => true)
+
+User.create(:username => "google",
 			:email => "google@google.com",
 			:password => "google", 
 			:password_confirmation => "google",
 			:admin => true)
 
-User.create(:fullname => "local", 
-			:address1 => "N/A", 
-			:address2 => "N/A",
-			:postcode => "N/A", 
-			:city => "N/A", 
-			:country => "N/A", 
-			:phone => 123456789,
+User.create(:username => "local",
 			:email => "local@google.com",
 			:password => "google", 
 			:password_confirmation => "google",
 			:admin => false)
-Product.delete_all
-Product.create(:title=>'Jeans',
-				:description=> 'Blue',
-				:image_url=> (File.join(Rails.root, '/app/assets/images/img02.jpg' ) ),
-				:price=> 49.50)
 
+User.create(:username => "mentor",
+			:email => "mentor@google.com",
+			:password => "google", 
+			:password_confirmation => "google",
+			:admin => false, 
+			:mentor => true )
 
-Product.create(:title=>'Hat',
-				:description=> 'Brown',
-				:image_url=> 'http://i1310.photobucket.com/albums/s644/aqpic2010/img09_zps8314c27e.png' ,
-				:price=> 49.50)
+User.create(:username => "mentor2",
+			:email => "mentor2@google.com",
+			:password => "google", 
+			:password_confirmation => "google",
+			:admin => false, 
+			:mentor => true )
 
+User.create(:username => "mentor3",
+			:email => "mentor3@google.com",
+			:password => "google", 
+			:password_confirmation => "google",
+			:admin => false, 
+			:mentor => true )
+
+User.create(:username => "user1",
+			:email => "user1@google.com",
+			:password => "google", 
+			:password_confirmation => "google",
+			:admin => false, 
+			:mentor => false )
+
+User.create(:username => "user2",
+			:email => "user2@google.com",
+			:password => "google", 
+			:password_confirmation => "google",
+			:admin => false, 
+			:mentor => false )
 #Product.create(name: 'Blue Jeans', 
 #			   description: 'Good quality jeans', 
 #			   price: '29', 

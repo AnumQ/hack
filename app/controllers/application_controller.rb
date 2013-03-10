@@ -1,6 +1,4 @@
 class ApplicationController < ActionController::Base
-  #
-  #before_filter :authorize_admin
 
   protect_from_forgery
 	
@@ -9,14 +7,6 @@ class ApplicationController < ActionController::Base
   #		User.find(session[:user_id])
   #	end
   
-    def current_cart
-		Cart.find(session[:cart_id])
-	rescue ActiveRecord::RecordNotFound
-		cart = Cart.create
-		session[:cart_id] = cart.id
-		cart
-	end
-
 	def verify_is_admin
   (current_user.nil?) ? redirect_to(root_path) : (redirect_to(root_path) unless current_user.admin?)
 	end
@@ -29,10 +19,16 @@ class ApplicationController < ActionController::Base
 	end
 
 	def authorize_admin
-	  unless current_user.admin?
-	  	redirect_to store_url, :notice => "You don't have the permissions."
+	  unless user_signed_in? && current_user.admin?
+	  	  redirect_to root_url, :notice => "You don't have the permissions."
+      end
+	end
+
+	def authorize_mentor
+	  unless user_signed_in? && current_user.mentor == true
+	      redirect_to root_url, :notice => "You don't have the permissions."
 	  end
-    end
+	end
 
 private
 

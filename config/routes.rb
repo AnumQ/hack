@@ -6,11 +6,18 @@ Lc::Application.routes.draw do
     match '/login', :to => "devise/sessions#new", :as => 'login'
     match '/logout', :to => "devise/sessions#destroy", :as => 'logout'
     match '/signup', :to => "devise/registrations#new", :as => 'signup'
-  end  
+end  
+
+  resources :user, :controller => "user"
+  get 'user/edit'
 
   get'admin'=> 'admin#index'
+   
+  
 
-
+  #match "/users/:id/edit", :to => "users#editt", :as => "editt"
+  match "/users/", :to => "user#index", :as => "users"
+  #match "users/:id", :to => "users#update", :method => "put"
   root :to => 'pages#home', :as => 'root'
 
   
