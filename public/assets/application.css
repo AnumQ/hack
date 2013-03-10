@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	font-family: helvetica;
+	color: #505050;
+	font-size: 13px;
+	background-color: #e0f0ff;
+	
+}
+a{
+	text-decoration:none;
+	}
+
+#content-holder
+{
+	
+	height:720px;
+}
+
+#wrapper{
+
+    background-image: url('indexbg.jpg');
+	width:1024px;
+	height:720px;
+	margin-top: -10px;
+	margin-bottom: 0px;
+	margin-right:auto;
+	margin-left: auto;	
+	}
+
+#wrapper p{
+	color:white;
+	font-size: 13pt;
+	
+	}
+#wrapper p:hover{
+	text-decoration:none;
+	color:#FF6633;
+	
+	}
+
+.logo{
+	margin-left:31%;
+	margin-top:60px;
+	}
+.learn-btn{
+	margin-left:20%;
+	float:left;
+	text-align:center;
+	}
+.events-btn{
+	margin-right:15%;
+	float:right;
+	text-align:center;
+	}
+.signup-btn{
+	margin-top:70px;
+	margin-left:40px;
+	padding-left:10px;
+	text-align:center;
+	}
+#footer{
+	width: 1024px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	background-color:#1C314F;
+	height:30px;
+	}
+#footer .about a{
+	margin:10px;
+	color:white;
+	float:left;
+	}
+#footer .about a:hover{
+	color:#FF6633;
+	}
+#footer .credit{
+	color:white;
+	float:right;
+	width:200px;
+	}
+#footer .credit p{
+	margin-top:5px;
+	font-size: 14px;
+	float: right;
+	margin-right: 10px;
+	
+	}
+#footer .facebook{
+	float:right;
+	margin-left: 5px;
+	margin-top:-20px;
+	}

@@ -1,0 +1,266 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	color: #3B3B3B;
+}
+
+/* Header */
+
+#header-wrapper {
+}
+
+#header {
+	width: 1000px;
+	margin: 0px auto;
+}
+
+
+
+/* Menu */
+#menu-wrapper {
+	overflow: hidden;
+	height: 56px;
+	background: #FFF8DC;
+	border-top: 1px solid #3D2729;
+}
+
+#menu {
+	width: 1000px;
+	height: 55px;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+#menu-right
+{
+	background-color:;
+	float: right;
+	width: 150px;
+}
+
+#menu-right .link 
+{
+	float: right;
+	text-decoration: underline;
+	font-size: 10px;
+}
+
+#menu-right .button
+{
+	float:right;
+}
+#menu-right .button p
+{
+	float:right;
+}
+
+
+
+#menu-left
+{
+	float: left;
+	width: 850px;
+	
+}
+
+#menu ul {
+	margin: 0;
+	padding: 10px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+	border-right: 1px solid #FFE4C4;
+}
+
+#menu-left a {
+	display: block;
+	letter-spacing: 1px;
+	margin: 0px 10px;
+	padding: 10px 20px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Arvo', serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #D2691E;
+	border: none;
+}
+
+#menu-left a:hover {
+	background: none;
+	text-decoration: underline;
+}
+
+#menu-left .current_page_item a {
+	background: #F6BA00;
+	border-radius: 8px;
+	text-decoration: none;
+	color: #3D2729;
+}
+
+#menu-right a {
+	font-weight: normal;
+	color: #D2691E;
+	border: none;
+}
+#menu-right a:hover
+{
+	text-decoration: underline;
+}
+
+#menu-right p
+{	
+	font-size: 10px;
+}
+
+/* Products */
+#product
+{
+	width:650px;
+	
+}
+
+#product
+{	
+	width: 650px;
+	height: 450px;
+}
+
+#product-list
+{
+	position: relative;
+	float: left;
+	background-color: #FFFFF3;
+	height: 200px;
+	width: 200px;
+	margin: 0px 10px 10px 5px;
+}
+#product-list .pic
+{	
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	background-color: ;
+}
+
+#product-list .price
+{	
+    float: right;
+}
+
+#product-list p
+{
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#break
+{	
+	background-color: black;
+	width: 650px;
+	height: 1px;
+}
+
+#table
+{	
+	width: 650px;
+	display: block;
+	color: black;
+}
+/* Links */
+
+
+/* Button */
+
+
+/* Page */
+
+#wrapper {
+}
+#page {
+	overflow: hidden;
+	width: 1000px;
+	margin: 0px auto;
+}
+
+#flash
+{
+	background-color:white;
+	overflow: hidden;
+	width: 1000px;
+	margin: 0px auto;
+	padding: 0px 0px;
+	
+}
+
+#flash .notice, #flash .alert
+{
+	text-decoration: underline;
+	color:red;
+}
+
+#flash .notice p,  #flash .alert p
+{
+	text-decoration: underline;
+}
+/* Content */
+
+#content {
+	float: left;
+	width: 640px;
+}
+
+#content2 a, p 
+{	
+	float: left;
+}
+
+/* Footer */
+
+#footer {
+	height: 50px;
+	margin: 0 auto;
+	padding: 0px 0 15px 0;
+	background: #F1EDE4;
+	border-top: 5px solid #E7DFD7;
+	font-family: 'Arvo', serif;
+}
+
+#footer p {
+	margin: 0;
+	padding-top: 20px;
+	line-height: normal;
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #A0A0A0;
+}
+
+#footer a {
+	color: #8A8A8A;
+}
+
+#banner {
+	width: 1000px;
+	margin: 0px auto;
+}
+
+#banner img
+{
+	border-radius: 8px;
+}
+
+#banner_pic
+{
+	width: 1000px;
+	margin: 0px auto;
+	border-radius: 8px;
+}
