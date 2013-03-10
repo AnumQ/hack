@@ -27,9 +27,10 @@ end
   get "pages/help"
   
   match '/home', :to => 'pages#home', :as => 'home'
-  match '/help', :to => 'pages#help', :as => 'help'
+  match '/events', :to => 'pages#events', :as => 'events'
   match '/about', :to => 'pages#about', :as => 'about'
-  match '/contact', :to => 'pages#contact', :as => 'contact' 
+  match '/contact', :to => 'pages#contact', :as => 'contact'
+  match '/learn', :to => 'pages#learn', :as => 'learn'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

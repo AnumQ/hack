@@ -65,16 +65,10 @@ a{
 	margin-left: auto;
 	margin-top: 0px;
 	background-color:#1C314F;
-	height:32px;
+	height:30px;
 	}
-#footer .about
-{
-	margin-left: 10px;
-	font-size: 14px;
-}
-
 #footer .about a{
-	margin-top: 8px;
+	margin:10px;
 	color:white;
 	float:left;
 	}
@@ -87,7 +81,7 @@ a{
 	width:200px;
 	}
 #footer .credit p{
-	margin-top:7px;
+	margin-top:5px;
 	font-size: 14px;
 	float: right;
 	margin-right: 10px;
@@ -96,5 +90,5 @@ a{
 #footer .facebook{
 	float:right;
 	margin-left: 5px;
-	margin-top:-22px;
+	margin-top:-20px;
 	}

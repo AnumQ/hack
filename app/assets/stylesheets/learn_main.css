@@ -1,0 +1,128 @@
+body {
+        font-family: helvetica;
+        color: #505050;
+        font-size: 13px;
+        background-color: #B1E3FA;
+}
+
+h1 {
+        font-size: 2em;
+        margin-bottom: 15px;
+        font-weight: bold;
+}
+
+h2 {
+        font-size: 1.3em;
+        margin-bottom: 5px;
+        font-weight: bold;
+        text-decoration: underline;
+}
+
+h3 {
+        margin-bottom: 5px;
+        font-weight: bold;
+}
+
+#body {
+        position: relative;
+        width: 1004px;
+        height: 748px;
+        background-color: #B1E3FA;
+        margin: 10px auto;
+        border: none;
+        padding: 0 10px;
+}
+
+.content {
+        float: left;
+        padding: 10px;
+}
+
+.content.left {
+        display: block;
+        width: 660px;
+        height: auto;
+        min-height: 400px;
+        background-color: #fff;
+        border-radius: 10px;
+        border: 1px solid #add6ff;
+}
+
+.content.right {
+        display: block;
+        width: 284px;
+        height: auto;
+        min-height: 400px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin-left: 10px;
+        border: 1px solid #add6ff;
+}
+
+.content.left img {
+        float: left;
+        width: 200px;
+        height: 150px;
+}
+
+.content .event {
+        height: 160px;
+        padding-bottom: 15px;
+}
+
+.content .event img {
+        overflow:hidden;
+}
+
+.content.left h2 {
+        float:left;
+        padding-left: 10px;
+        width: 300px;
+}
+
+.content.left p {
+        float:left;
+        padding-left: 10px;
+        width: 300px;
+}
+
+.content.left h3 {
+        float:left;
+        padding-left: 10px;
+}
+
+.content.right img {
+        float: left;
+}
+
+.content .woman {
+        height: 160px;
+}
+
+.content.right h2 {
+        float:left;
+        padding-left: 10px;
+        width: 130px;
+}
+
+.content.right p {
+        float:left;
+        padding-left: 10px;
+        width: 130px;
+}
+#contentop {
+		 background-image: url('inside-top.jpg');
+        height:300px;
+        width:100%;
+        position:relative;
+        float:left;
+        }
+
+#contentop .imgevents {
+        float:left;
+        height: 150px;
+        width:50%;
+}
+#contentop .imgteachlearn {
+        float:right;   
+}

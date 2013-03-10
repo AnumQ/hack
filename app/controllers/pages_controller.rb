@@ -9,7 +9,10 @@ class PagesController < ApplicationController
   def contact
   end
   
-  def help
+  def events
+  end
+
+  def learn
   end
 
 end

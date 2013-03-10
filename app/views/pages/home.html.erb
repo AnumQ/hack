@@ -1,27 +1,33 @@
+<head>
+<title>The Learning Network</title>
+<%= stylesheet_link_tag "application", :media => "all" %>
+</head>
+<body>
  <div id="content-holder">
    <div id="wrapper">
 	 <img class="logo" src="assets/images/logo.png" >
      <br/>
    
    	  <div class="learn-btn">
-      <a href=""><img src="assets/images/learn.png"> 
+      <a href="/learn"><img src="assets/images/learn.png"> 
       <p>Learn & Teach</p>
       </a>
       </div>
       
       <div class="events-btn">
-      <a href=""><img src="assets/images/events.png">
+      <a href="/events"><img src="assets/images/events.png">
        <p>Events</p></a>
        </div>
       
-      <div class="signup-btn">
-      <a href=""><img src="assets/images/signup.png">
-       <p>Signup</p></a>
-      </div>
+       <div class="signup-btn">
+      	<a href="signup"><img src="assets/images/signup.png">
+       <p>Signup</p></a></div>
+      
     </div>
     <div id="footer">
   		<div class="about">
-  		<a href="about.html">About Us</a>
+  		<a href="/about">About Us</a>
+  		<a class = "contact" href="/contact">Contact Us</a>
   		</div>
   
 	   <div id= "footer" class="credit">
@@ -30,3 +36,4 @@
        </div>
 	</div>
 </div>
+</body
