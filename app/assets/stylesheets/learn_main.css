@@ -46,6 +46,7 @@ h3 {
         background-color: #fff;
         border-radius: 10px;
         border: 1px solid #add6ff;
+        padding-top: 20px;
 }
 
 .content.right {
@@ -57,6 +58,7 @@ h3 {
         border-radius: 10px;
         margin-left: 10px;
         border: 1px solid #add6ff;
+        padding-bottom: 25px;
 }
 
 .content.left img {
@@ -99,6 +101,12 @@ h3 {
         height: 160px;
 }
 
+.content .woman img{
+        height:130px;
+        width: 130px;
+        overflow: hidden;
+}
+
 .content.right h2 {
         float:left;
         padding-left: 10px;
@@ -111,7 +119,7 @@ h3 {
         width: 130px;
 }
 #contentop {
-		 background-image: url('inside-top.jpg');
+        background:url(../assets/images/inside-top.jpg) no-repeat;
         height:300px;
         width:100%;
         position:relative;
@@ -120,9 +128,12 @@ h3 {
 
 #contentop .imgevents {
         float:left;
-        height: 150px;
+        padding: 20px;
+        height: 110px;
         width:50%;
 }
 #contentop .imgteachlearn {
         float:right;   
+        padding-top: 90px;
+        padding-right: 20px;
 }

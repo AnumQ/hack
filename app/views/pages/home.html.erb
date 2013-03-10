@@ -1,10 +1,20 @@
 <head>
 <title>The Learning Network</title>
+<%= stylesheet_link_tag "signup", :media => "all" %>
 <%= stylesheet_link_tag "application", :media => "all" %>
 </head>
 <body>
  <div id="content-holder">
    <div id="wrapper">
+   		   <div id="home">
+   		<a href="/home"><img src="assets/images/home.png">
+      	</a>
+      	<% if user_signed_in? %>
+      	<a href="/logout"><img src="assets/images/logout.png">
+      	</a>
+      	<% end %> 
+   	   </div>
+
 	 <img class="logo" src="assets/images/logo.png" >
      <br/>
    
@@ -18,11 +28,11 @@
       <a href="/events"><img src="assets/images/events.png">
        <p>Events</p></a>
        </div>
-      
+      <% unless user_signed_in? %>
        <div class="signup-btn">
-      	<a href="signup"><img src="assets/images/signup.png">
-       <p>Signup</p></a></div>
-      
+      	<a href="/login"><img src="assets/images/signup.png">
+       <p>Log In</p></a></div>
+      <% end %>
     </div>
     <div id="footer">
   		<div class="about">

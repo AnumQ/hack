@@ -2,12 +2,21 @@
 <title>The Learning Network</title>
 <%= stylesheet_link_tag "learn_main", :media => "all" %>
 <%= stylesheet_link_tag "reset", :media => "all" %>
+<%= stylesheet_link_tag "signup", :media => "all" %>
 </head>
 <body>
 <section id="body">
+	   <div id="home">
+   		<a href="/home"><img src="assets/images/home.png">
+      	</a>
+      	<% if user_signed_in? %>
+      	<a href="/logout"><img src="assets/images/logout.png">
+      	</a>
+      	<% end %> 
+   	   </div>
         <div id="contentop">
-                <div class="imgevents"><img src="assets/images/eventitle.png"/></div>
-                <div class="imgteachlearn"><img src="assets/images/teach-nav.png"></div> 
+                <div class="imgevents"><a href="/events"><img src="assets/images/eventitle.png"/></a></div>
+                <div class="imgteachlearn"><a href="/learn"><img src="assets/images/teach-nav.png"></a></div> 
 
             <div class="content left">
                     
@@ -44,17 +53,17 @@
                         <h1>Professional Women</h1>
 
                         <div class="woman">
-                        <img src="http://placehold.it/130x130">
+                        <img src="assets/images/woman1.jpg">
                         <h2>L. Winterbottom</h2>
                         <p>Sed ut perspic iatis, unde omnis iste natus error sit volupt atem accusan tium dolorem que laudan tium, qui ratione volupta.</p>
                 </div>
                 <div class="woman">
-                        <img src="http://placehold.it/130x130">
+                        <img src="assets/images/woman2.jpg">
                         <h2>Anita Miller</h2>
                         <p>Sed ut perspic iatis, unde omnis iste natus error sit volupt atem accusan tium dolorem que laudan tium, qui ratione volupta.</p>
                         </div>
                         <div class="woman">
-                        <img src="http://placehold.it/130x130">
+                        <img src="assets/images/woman3.jpg">
                         <h2>Yi Liangxi</h2>
                         <p>Sed ut perspic iatis, unde omnis iste natus error sit volupt atem accusan tium dolorem que laudan tium, qui ratione volupta.</p>
                         </div>
